@@ -85,6 +85,7 @@
                         <li>
                             <a href="boardList"><i class="fa fa-files-o fa-fw"></i> <s:message code="board.boardName"/></a>
                         </li>
+                        <c:if test='${sessionScope.userrole == "A"}'>
                         <li>
                             <a href="#"><i class="fa fa-music fa-fw"></i> 샘플<span class="fa arrow"></span></a>
 							<ul class="nav nav-second-level">
@@ -108,6 +109,7 @@
                                 </li>
 	                        </ul>                            
                         </li>
+                        </c:if>
                         <c:if test='${sessionScope.userrole == "A"}'>
 	                        <li>
 	                            <a href="#"> <s:message code="memu.admin"/></a>
